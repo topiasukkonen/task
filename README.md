@@ -1,6 +1,6 @@
 # Maze Solver
 
-The program solves a maze provided in a .txt file.
+The program solves a maze provided in a .txt file using breadth-first search.
 
 The code can be run from the root of the project as follows: python3 task.py
 
