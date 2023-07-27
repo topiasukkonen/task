@@ -89,12 +89,12 @@ def solveMaze(maze_file, max_moves):
 
 class TestMazeSolver(unittest.TestCase):
     def test_solveMaze(self):
-        self.assertEqual(solveMaze('maze-task-first_(1).txt', 20), False)
-        self.assertEqual(solveMaze('maze-task-first_(1).txt', 150), True)
-        self.assertEqual(solveMaze('maze-task-first_(1).txt', 200), True)
+        self.assertEqual(solveMaze('maze1.txt', 20), False)
+        self.assertEqual(solveMaze('maze1.txt', 150), True)
+        self.assertEqual(solveMaze('maze1.txt', 200), True)
 
 if __name__ == '__main__':
-    print(solveMaze('maze-task-first_(1).txt', 20))
-    print(solveMaze('maze-task-first_(1).txt', 150)) 
-    print(solveMaze('maze-task-first_(1).txt', 200)) 
+    maze_file = input("Enter the filename of the maze to solve: ")
+    max_moves = int(input("Enter the maximum number of moves: "))
+    print(solveMaze(maze_file, max_moves))
     unittest.main()
